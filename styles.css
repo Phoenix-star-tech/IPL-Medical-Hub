@@ -1,0 +1,219 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 2rem;
+    color:rgb(55 65 81) ;
+}
+
+.logo {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    display: flex;
+    text-decoration: none;
+    color:rgb(55 65 81);
+    font-size: 1rem;
+    font-family: "Oswald", sans-serif;
+    transition: color 0.3s ease;
+}
+.home{
+    position: relative;
+    top: 0px;
+    margin-right: 5px;
+    color: grey;
+}
+.nav-links a:hover {
+    color: #ff6600; /* Highlight on hover */
+}
+
+.bgimg1{
+    height: 100vh;
+}
+.bgimg2{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.img{
+    position: absolute;
+    top:20px ;
+    filter: blur(0.5px);
+    max-width: 100%;
+}
+.intropar{
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    width: 50vw;
+    bottom: 400px;
+    background-color: rgb(30 58 138 / .5);
+    padding: 5px 5px 5px 40px;
+    margin-right: 40px;
+    border-radius: 0px 50px 50px 0px;
+    color: white;
+    font-size: 40px;
+}
+
+.order{
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    bottom: 350px;
+    margin-left: 50px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: blue;
+    padding: 15px;
+    border-radius: 15px;
+    border-color: blue;
+}
+
+.founder{
+    display: flex;
+    margin-top:50px;
+    margin-left: 20px;
+}
+.founderimg{
+    border-radius: 20px;
+    box-shadow: 20px 10px 40px gray;
+    background-color: aliceblue;
+    width: 40vw;
+    height: 50vh;
+}
+.founderintro{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.founderintro .par{
+    font-family: "Oswald", sans-serif;
+    margin-top: 30px;
+}
+
+.founderintro p{
+    font-family: "Oswald", sans-serif;
+}
+
+.footer{
+    font-family: "Oswald", sans-serif;
+    margin-top: 30px;
+    background-color: rgb(17 24 39);
+}
+
+footer{
+    display: flex;
+    height: 200px;
+}
+
+.contact{
+    color: white;
+    padding: 30px;
+    margin-left: 30px;
+}
+
+.contact h3{
+    padding: 10px;
+}
+
+.contact li{
+    list-style: none;
+}
+
+.copy{
+    background-color:rgb(17 24 39) ;
+    margin: none;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+hr{
+    width: 60vw;
+    color: gray;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+    }
+    .founder{
+        flex-direction: column;
+    }
+    .founderimg{
+        align-self: center;
+        width: 250px;
+    }
+    .founderintro{
+        margin-top: 30px;
+    }
+    .founderintro h2{
+        align-self: center;
+    }
+    .introcontener{
+        position: relative;
+        top: 5px;
+    }
+    .intropar{
+        font-size: 25px;
+        padding-right:20px ;
+    }
+    .order{
+        font-size: 20px;
+    }
+    .logo {
+        margin-left: -20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .nav-links li {
+        position: relative;
+    }
+    
+    .nav-links a {
+        display: flex;
+        text-decoration: none;
+        color:rgb(55 65 81);
+        font-size: 0.9 rem;
+        transition: color 0.3s ease;
+    }
+    .home{
+        position: relative;
+        top: -5px;
+        margin-right: 5px;
+        color: grey;
+    }
+    .nav-links a:hover {
+        color: #ff6600; /* Highlight on hover */
+    }    
+}
